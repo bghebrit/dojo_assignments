@@ -1,0 +1,23 @@
+*{
+    margin: 0 auto;
+}
+.container {
+    width: 960px;
+    min-height: 500px;
+    background-image: linear-gradient(rgb(247, 184, 220),white)
+}
+.leftnav, .rightnav {
+    display: inline-block;
+}
+.jumbotron {
+    width:920;
+    min-height: 60px;
+    background-image: linear-gradient(white, black);
+    text-align: center;
+}
+.leftnav, .rightnav{
+    width: 450px;
+    height: 55px;
+    background-color: lightblue;
+    text-align: center;
+}

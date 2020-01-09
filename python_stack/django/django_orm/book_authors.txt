@@ -1,0 +1,13 @@
+Books : Csharp , Java , Python , PHP , Ruby 
+Authors : Jane Austen, Emily Dickinson, Fyodor Dostoevksy, William Shakespeare, Lau Tzu
+Add a new text field in the authors table called 'notes'.
+Query: Change the name of the C Sharp book to C# (done up to here)
+
+Query: Change the first name of the 4th author to Bill
+
+Query: Assign the first author to the first 2 books
+
+Query: Assign the second author to the first 3 books
+Query: Assign the third author to the first 4 books
+Query: Assign the fourth author to the first 5 books (or in other words, all the books)
+Query: Retrieve all the authors for the 3rd book

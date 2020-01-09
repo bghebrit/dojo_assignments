@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trips!</title>
+</head>
+<body>
+    <h1>Hello {{request.session.user_name}}! Create a trip!</h1>
+    <p>A trip destination must consist of atleast 3 characters</p>
+    <P>A plan must be provided!</P>
+    <form action="/addTrip" method="post">
+        {% csrf_token %} 
+    Destination : <input type="text" name='destination'><br>
+    <br>
+    Start Date : <input type="date" name='start_date'><br>
+    <br>
+    End Date : <input type="date" name='end_date'><br>
+    <br>
+    Plan : <input type="text" name="plan">
+    
+    </form>
+    <br>
+
+    <a href="/dashboard">Submit</button><br>
+    <br>
+    <a href="/dashboard">Cancel</a><br>
+    <br>
+    <a href="/logout">logout</a>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+.container {
+    /* outline: 5px solid black; */
+    margin:50px;
+}
+.container{
+    /* width: 400px; */
+    padding:20px;
+    margin:auto;
+}
+.container *{
+    display: block;
+    /* max-width: 500px; */
+    text-align: center;
+}
+
+#too-high, #too-low, #equal {
+    width:200px;
+    height:200px;
+    color:white;
+    padding:30px;
+    padding-top:80px;
+    margin:auto;
+    /* text-align: center; */
+}
+
+#too-high, #too-low {
+    background-color: red;;
+}
+
+#equal {
+    background-color: green;
+}
+
+#play_again_box{
+    width:100px;
+}
+.message-4{
+    text-align: center;
+}
+
+.message-5{
+    text-align: center;
+}

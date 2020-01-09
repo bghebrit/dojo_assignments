@@ -1,0 +1,5 @@
+package com.codingdojo.bankaccount;
+
+public class BankAccount {
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dashboard</title>
+</head>
+<body>
+    <h1>Hello {{users.id}}</h1>
+    <p>Your trips</p>
+    <h1><a href='/'>Logout</a></h1>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Destination</th>
+                    <th scope="col"> Start Date</th>
+                    <th scope="col">End Date</th>
+                    <th scope="col">Plan</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <thead>
+                {% for trip in all_trips %}
+                <tr>  
+                    <td>{{trip.destination}}</td>
+                    <td>{{trip.start_date}}</td>
+                    <td>{{trip.end_date}}</td>
+                    <td>{{trip.plan}}</td>
+                </tr>
+                {% endfor %}                    
+            </thead>
+        </table>
+    </div>
+
+
+    
+</body>
+</html>

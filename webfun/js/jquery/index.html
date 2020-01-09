@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment</title>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="leftnav">Left</div>
+            <div class="rightnav">Right</div>
+        </div>
+        <button class="button">86-Jumbotron!</button>
+        <script>
+            // $(document).ready(function(){
+            //     if( $('.jumbotron').first().is(":hidden") ){
+            //         $(".jumbotron").show("slow");
+            //     }
+            //     else{
+            //         $(".jumbotron").hide("slow", function(){
+            //             alert("Animation complete.")
+            //         });
+            //     }
+            // })
+           // $(document).ready(function() {
+
+                 //$(".button").click(function() {
+                   //  $(".jumbotron").hide(3500);
+                if ( $(".jumbotron").first().is(":hidden") ) {
+                    $(".jumbotron").show("slow");
+                } 
+                else {
+                    $(".jumbotron").hide("slow", function (){ 
+                        alert("Animation complete.")
+                    })
+                }
+            
+
+            $(".leftnav").click(function () {
+                $(".leftnav").slideUp("5000", function () {
+                    // Animation complete.
+                });
+            });
+
+            $(".rightnav").click(function () {
+                $(".rightnav").fadeOut(5000, function () {
+                    // Animation complete.
+                });
+            });
+
+
+
+            // alert ("Animation Complete.");
+        </script>
+    </div>
+
+</body>
+
+</html>

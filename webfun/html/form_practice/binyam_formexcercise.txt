@@ -1,0 +1,49 @@
+<form action="process.php" method="post">
+    <p>My Registration Form</p>
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name name="first_name">
+
+
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name name="last_name">
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name=email>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    
+    <label for="pw_confirm">Password Confirmation:</label>
+    <input type="password" id="pw_confirm" name="password_confirmation">
+
+    <p>Please Select Your BirthDay</P>
+    <label for="month">Month<label>
+    input type="checkbox" id="month" value="month">
+    <label for="day">day<label>
+    input type="checkbox" id="day" value="day">
+    <label for="year">Year<label>
+    input type="checkbox" id="year" value="year">
+
+    <p>Select your gender</P>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender"
+
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender"
+
+    <label for="decline">Other</label>
+    <input type="radio" id="decline" name="gender"
+
+    <P>A short description about yourself:</P>
+    <textarea name="description"></textarea>
+
+    <p>Favourite language</p>
+    <label for="Javascript">Javascript</label>
+    <input type="checkbox" id="javascript" value="javascript">
+    <label for="Css">Css</label>
+    <input type="checkbox" id="css" value="css">
+
+    <input type="submit" value="submit">
+
+</form>

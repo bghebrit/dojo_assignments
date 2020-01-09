@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - VehicleTest",
+            "request": "launch",
+            "mainClass": "VehicleTest",
+            "projectName": "javaOOP_62c24550"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloWorldTest",
+            "request": "launch",
+            "mainClass": "HelloWorldTest",
+            "projectName": "javaOOP_62c24550"
+        }
+    ]
+}

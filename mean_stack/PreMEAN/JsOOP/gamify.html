@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+  <script>
+    var christopher = {
+      character: "Christopher Robin",
+      greet: function() {
+        console.log("Silly ol' bear!");
+      }
+    };
+    
+    var pooh = {
+      character: "Winnie the Pooh",
+      greet: function() {
+        console.log("I seem to have a rumbly in my tumbly!");
+      }
+    };
+     
+    var tigger = {
+      character: "Tigger",
+      greet: function() {
+        console.log("Consider yourself pounced!");
+      }
+    };
+    
+    var eeyore = {
+      character: "Eeyore",
+      greet: function() {
+        console.log("Thanks for noticin' me.");
+      }
+    };
+    
+    var kanga = {
+      character: "Kanga",
+      greet: function() {
+        console.log("Why, hello, Tigger, dear.");
+      }
+    };
+    
+    var heffalumps = {
+      character: "Heffalumps",
+      greet: function() {
+        console.log("Ha ha ha ha!");
+      }
+    };
+    
+    var owl = {
+      character: "Owl",
+      greet: function() {
+        console.log("This reminds me of the time when...");
+      }
+    };
+    
+    var piglet = {
+      character: "Piglet",
+      greet: function() {
+        console.log("Oh, d-d-d-dear! I musn’t f-f-f-fear!");
+      }
+    };
+    
+    var rabbit = {
+      character: "Rabbit",
+      greet: function() {
+        console.log("why does it always have to be me? why, oh why, oh why?");
+      }
+    };
+    
+    var bees = {
+      character: "Bees",
+      greet: function() {
+        console.log("Bzzzzzzzzzzzz");
+      }
+    };
+    
+    var gopher = {
+      character: "Gopher",
+      greet: function() {
+        console.log("Say, what's wrong sonny?!");
+      }
+    };
+    
+    christopher.north = kanga;
+    christopher.south = pooh;
+    christopher.east = rabbit;
+    christopher.west = owl;
+    tigger.north = pooh;
+    pooh.north = christopher;
+    pooh.south = tigger;
+    pooh.east = bees;
+    pooh.west = piglet;
+    eeyore.east = heffalumps;
+    eeyore.south = kanga;
+    kanga.north = eeyore;
+    kanga.south = christopher;
+    heffalumps.west = eeyore;
+    owl.east = christopher;
+    owl.south = piglet;
+    piglet.north = owl;
+    piglet.east = pooh;
+    rabbit.east = gopher;
+    rabbit.west = christopher;
+    rabbit.south = bees;
+    bees.north = rabbit;
+    bees.west = pooh;
+    gopher.west = rabbit;
+    var player = { location: tigger,
+                   honey: false,
+                   target: "" };
+    function move(direction) {
+      if (direction == "north") {
+        if (player.location.north == undefined) {
+          console.log("You may not go that way!");
+        } else {
+          player.location = player.location.north;
+          console.log(
+            "You are now at " + player.location.character + "'s house!"
+          );
+          player.location.greet();
+        }
+      }
+      if (direction == "south") {
+        if (player.location.south == undefined) {
+          console.log("You may not go that way!");
+        } else {
+          player.location = player.location.south;
+          console.log(
+            "You are now at " + player.location.character + "'s house!"
+          );
+          player.location.greet();
+        }
+      }
+      if (direction == "east") {
+        if (player.location.east == undefined) {
+          console.log("You may not go that way!");
+        } else {
+          player.location = player.location.east;
+          console.log(
+            "You are now at " + player.location.character + "'s house!"
+          );
+          player.location.greet();
+        }
+      }
+      if (direction == "west") {
+        if (player.location.west == undefined) {
+          console.log("You may not go that way!");
+        } else {
+          player.location = player.location.west;
+          console.log(
+            "You are now at " + player.location.character + "'s house!"
+          );
+          player.location.greet();
+        }
+      }
+    }
+    function pickup()
+    {
+        //console.log("inside");
+        if(player.location.character == "Bees")
+        {
+            player.honey = true;
+            console.log("You have picked up some honey!");
+        }
+        else
+        {
+            console.log("Hmmm, there doesn't seem to be any honey here!")
+        }
+    }
+    function drop()
+    {
+        if(player.location.character == player.target)
+        {
+            player.honey = false;
+            console.log("Great! Thanks for the yummy gift!");
+        }
+        else
+        {
+            console.log("Wait! This isn't where you're supposed to drop it!")
+        }
+    }
+    var targets = ["Christopher Robin","Winnie the Pooh", "Tigger", "Piglet", "Eeyore", "Owl", "Gopher", "Kanga", "Rabbit", "Heffalumps"];
+    function mission()
+    {
+        rand = Math.floor(Math.random() * 10);
+        player.target = targets[rand];
+        console.log("You need to deliver honey to " + targets[rand]);
+    }
+    
+  </script>
+
+<body>
+    
+</body>
+</html>

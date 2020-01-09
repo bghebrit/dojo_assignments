@@ -1,0 +1,30 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    /* outline: 15px solid black; */
+   }
+body {
+    font-family:Sans-Serif;
+  }
+.box1{
+    display: inline-block;
+    height:40px; 
+    width:40px;
+    background-color: red;
+    margin:0px;
+}
+.box2{
+    display: inline-block;
+    height:40px; 
+    width:40px;
+    background-color: rgb(161, 169, 177);
+    margin:0px;
+}
+.row{
+
+    display:block;
+    /* outline:5px solid black; */
+/* background-color:blue;} */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>create job</title>
+</head>
+<body>
+    <h1>Hello {{request.session.user_name}}</h1>
+
+    <form action="/jobs/new" method="post">
+        {% csrf_token %}
+        Job:<input type="text" name="job"><br>
+        <br>
+        Title:<input type="text" name="title"><br>
+        <br>
+        Description:<input type="text" name="desc"><br>
+        <br>
+        Location:<input type="text" name="location"><br>
+        <br>
+        <button><a href="dashboard">Cancel</a></button><br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div>
+            {% if messages %}
+        <ul class="messages">    
+            {% for message in messages %}    
+        <li {% if message.tags %} class="{{ message.tags }}"
+            {% endif %}>{{ message }}</li>    
+            {% endfor %}
+        </ul>
+            {% endif %}
+    </div>
+</div>   
+
+    
+</body>
+</html>

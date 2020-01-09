@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>List All Discussions</title>
+</head>
+<body>
+
+<p th:text="${message}"></p>
+
+<div>
+    <form method="post" th:object="${discussionForm}">
+        <label>Your Title:</label>
+        <input type="text" th:field="*{title}" value="Your title here"/>
+        <label>Your Message:</label>
+        <textarea cols="32" rows="10" th:field="*{content}">Your message here</textarea>
+        <input type="submit" value="Submit"/>
+
+    </form>
+
+    <h1>PostIt Discussion List</h1>
+
+    <div th:each="discussion: ${discussions}">
+        <hr/>
+        <h3 th:text="${discussion.title}"/>
+        <p th:text="${discussion.content}"/>
+        <hr/>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.header{
+    background-color: rgb(75, 11, 11);
+    padding: 60px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+}
+
+.left-header h1, .left-header p, .right-header p, .right-header, .left-header{
+   display: inline-block; 
+}
+
+.left-header h1, .right-header p, .jumbotron button {
+    color: rgb(56, 219, 23);
+}
+.left-header p{
+    color: #45B78B;
+    width: 250px;
+    vertical-align: middle;
+}
+.left-header{
+    margin-left: 200px;
+}
+
+.right-header{
+    text-align: right;
+    width: 1100px;
+}
+
+.right-header p{
+    margin: 10px;
+    font-weight: 500px;
+}
+.jumbotron{
+    text-align: center;
+    padding-top: 150px;
+}
+.jumbotron h1{
+    width: 600px;
+    margin: auto;
+}
+.jumbotron button{
+    padding: 20px;
+    border-radius: 10px;
+    padding-left:50px;
+    padding-right:50px;
+    font-size: x-large;
+    background-color: #45B78B;
+    margin-top: 20px;
+}

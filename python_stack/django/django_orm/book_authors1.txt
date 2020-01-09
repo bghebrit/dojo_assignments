@@ -1,0 +1,61 @@
+1) C Sharp, Java, Python, PHP, Ruby
+book.objects.create(title="C sharp")
+book.objects.create(title="Java")
+book.objects.create(title="Python")
+book.objects.create(title="PHP")
+book.objects.create(title="Ruby")
+
+2) Jane Austen, Emily Dickinson, Fyodor Dostoevksy, William Shakespeare, Lau Tzu
+author.objects.create(first_name="Jane", last_name="Austen")
+author.objects.create(first_name="Emily", last_name="Dickinson")
+author.objects.create(first_name="Fyodor", last_name="Dostoevsky")
+author.objects.create(first_name="William", last_name="Shakespeare")
+author.objects.create(first_name="Lau", last_name="Tzu")
+
+b = Book.objects.get(title="C sharp")
+b.title = "C#"
+b.save()
+
+a = author.objects.get(id=4)
+author.first_name = "Bill"
+a.save()
+
+a1 = author.objects.get(id=1)
+b1 = Book.objects.get(id=1)
+b2 = Book.objects.get(id=2)
+a1.books.add(b1)
+a1.books.add(b2)
+
+a2 = author.objects.get(id=2)
+b3 = book.objects.get(id=3)
+a2.books.add(b1)
+a2.books.add(b2)    
+a2.books.add(b3)
+
+a3 = author.objects.get(id=3)
+b4= book.objects.get(id=4)
+a3.books.add(b1)
+a3.books.add(b2)
+a3.books.add(b3)
+a3.books.add(b4)
+
+
+a4 = author.objects.get(id=4)
+b5 = Book.objects.get(id=5)
+a4.books.add(book1)
+a4.books.add(book2)
+a4.books.add(book3)
+a4.books.add(book4)
+a4.books.add(book5)
+
+book3.authors.all().values()
+
+
+book3.authors.remove(book3.authors.all().first())
+book3.authors.all().values()
+
+book2.authors.add(author.objects.get(id=5))
+
+author3.books.all().values()
+
+Book.objects.get(id=5).authors.all().values()

@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    margin: auto;
+    min-height: 400px;
+    width: 900px;
+    border: solid black 1px;
+    font-family: sans-serif;
+}
+.header{
+    background-color: #F7F7F7;
+    padding: 10px;
+    text-align : right ;
+    
+}
+.header h1{
+    font-family: sans-serif;
+}
+.header h1, .header h3, .right-upper, .upper-content img, .event-col{
+    display: inline-block;
+}
+.header h3{
+    width: 700px;
+    margin-right: 20px;
+}
+.main-content{
+    background-color: #6F5964;
+    padding: 20px;;
+}
+.upper-content img{
+    height: 230px;
+    width: 380px;
+    border: solid silver 5px;
+}
+.right-upper{
+    width: 420px;
+    margin-left: 20px;
+    vertical-align: top;
+}
+.right-upper h1, .event-col h1{
+    background-color: grey;
+    padding-left: 10px;
+}
+.right-upper{
+    background-color: silver;
+}
+.about-me-text{
+    padding: 10px;
+}
+.about-me-text p{
+    margin-bottom: 23px;
+    font-size: smaller;
+}
+.right-upper h1, .event-col h1{
+    color: white;
+}
+.event-col{
+    margin-top: 10px;
+    min-height: 200px;
+    width: 263px;
+    border: solid black 1px;
+    background-color: #DFD2DE;
+}
+#middle-col{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.middle-col h1{
+    font-size: large;
+}
+.event-col img{
+    height: 150px;
+    width: 100%;
+}
+.event-col p{
+    padding: 10px;
+}
+.tech img{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.technologies button{
+    padding: 10px;
+    border: solid black;
+    background-color: green;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.technologies h1{
+    margin-bottom: 5px;
+}

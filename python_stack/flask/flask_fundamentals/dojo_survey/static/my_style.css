@@ -1,0 +1,22 @@
+.container {
+    outline: 5px solid black;
+    margin:50px;
+}
+.container{
+    width: 400px;
+    padding:20px;
+}
+.container *{
+    display: block;
+    max-width: 500px;
+}
+
+.row{
+    display: inline-block;
+    margin:20px;
+}
+
+input, select {
+    text-align: right;
+    vertical-align: center;
+}

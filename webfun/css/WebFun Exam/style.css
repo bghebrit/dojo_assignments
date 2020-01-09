@@ -1,0 +1,151 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    margin: auto;
+    background-color:rgb(40, 11, 68);
+    min-height: 900px;
+    width: 970px;
+    font-family: sans-serif;
+    color : whitesmoke;
+    
+}
+.header{
+    min-height: 70px;
+    background: rgb(40, 11, 68);
+    margin-right: 10px;
+    
+}
+.header h1, .header ul , .header li{
+    display: inline-block;   
+}
+
+.header h1{
+    color: blue;
+    padding: 10px;
+}
+.header li{
+    font-family: sans-serif;
+    font-size: 20px;
+    padding : 10px;
+    margin-right: 10px;    
+}
+
+.left_content,.middle_content,.right_content{
+    text-align: left;
+    vertical-align: top;
+}
+.main_content,.centre_content,.footer,.lower_content{
+    text-align: center;
+}
+
+.upper_content{
+    height: 250px;
+    width: 900px;
+    margin: 20px;
+    margin-right: 40px;
+    
+}
+.upper_content img{
+    height:250px;
+    width: 900px;
+}
+.left_content , .middle_content , .right_content{
+    display: inline-block;
+}
+.left_content{
+    width :300px;
+    height: 300px;
+    background-color: turquoise;
+}
+.left_content img{
+    height: 25px;
+    width: 25px;
+    margin:10px;
+}
+.left_content h1, .left_content img {
+    display: inline-block; 
+}
+.left_content p{
+    width :250px;
+    margin : 20px;
+}
+.left_content button{
+    margin : 10px;
+    
+}
+.middle_content{
+    width :300px;
+    height: 300px;
+    background-color: turquoise;
+    
+    
+}
+.middle_content img{
+    height: 25px;
+    width: 25px;
+    margin:10px;
+}
+.middle_content h1, .middle_content img{
+    display: inline-block;
+}
+.middle_content p{
+    width :250px;
+    margin : 20px;
+}
+.middle_content{
+    margin : 10px;
+    vertical-align: top;
+}
+.middle_content button{
+    margin : 10px;
+}
+.right_content{
+    width :300px;
+    height: 300px;
+    background-color: turquoise;
+    
+}
+.right_content img{
+    height: 25px;
+    width: 25px;
+    margin:10px;
+}
+.right_content h1, .left_content img {
+    display: inline-block; 
+}
+.right_content p{
+    width :250px;
+    margin : 20px;
+}
+.right_content button{
+    margin : 10px;
+}
+.lower_left,.lower_middle,.lower_right {
+    display: inline-block;
+}
+.lower_left{
+    width : 300px;
+}
+.lower_left h1{
+    font-size: 20px;
+}
+.lower_left img{
+    width: 300px;
+}
+.lower_middle {
+    width:300px;
+    vertical-align: top;
+}
+.lower_right{
+    width: 300px;
+    vertical-align: top;
+}
+.footer ul , .footer li{
+    display: inline-block;
+}
+.footer{
+    text-align: center;
+    height: 20px;
+}
