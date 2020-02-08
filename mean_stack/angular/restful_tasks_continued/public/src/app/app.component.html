@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Restful Tasks API Continued</title>
+</head>
+
+<body>
+<h1>Restful Tasks API</h1>
+<h3>All the tasks:</h3>
+<p *ngFor="let task of tasks">{{ task.title }} - {{ task.description}}</p>
+<br>
+<h3>View One Task:</h3>
+<p> {{ onetask.title }} - {{ onetask.description }} </p>
+</body>
+
+</html>

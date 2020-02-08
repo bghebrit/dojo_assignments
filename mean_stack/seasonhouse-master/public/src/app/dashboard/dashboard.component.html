@@ -1,0 +1,56 @@
+<!-- ////FUTURE: INSTALL IMAGES IN THIS SECTION//////////////////////////// -->
+
+<!-- ////IMAGES SECTION END  //////////////////////////// -->
+
+
+<!-- ////WEATHER SECTION START//////////////////////////// -->
+<div class="weather myContainer">
+
+    <h1>Weather</h1>
+    <h2 class="myDarkGrey">{{info.city_name}}</h2>
+    <table>
+      <tbody>
+        <tr>
+          <th class="myDarkBlue" *ngFor="let data of info.data">{{data.valid_date | date: 'EEE'}}</th>
+        </tr>
+        <tr>
+          <th class="myDarkBlue" *ngFor="let data of info.data">{{data.valid_date | date: 'd'}}</th>
+        </tr>
+        <tr>
+          <td  *ngFor="let data of info.data">{{data.min_temp}}°F</td>
+        </tr>
+        <tr>
+          <td  *ngFor="let data of info.data">{{data.max_temp}}°F</td>
+        </tr>
+        <tr>
+          <td *ngFor="let data of info.data"><img src="../../assets/images/{{data.weather.icon}}.png"/></td>
+        </tr>
+        <tr>
+          <td *ngFor="let data of info.data">{{data.weather.description}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+</div>
+<!-- ////WEATHER SECTION END  //////////////////////////// -->
+
+
+<!-- ////MONTHLY CALENDAR SECTION START//////////////////////////// -->
+<div class="calendar">
+    <h1 class="myContainer">Calendar</h1>
+      <app-month></app-month>
+</div>
+<!-- ////MONTHLY CALENDAR SECTION END  //////////////////////////// -->
+
+
+<!-- ////CHORES SECTION START//////////////////////////// -->
+      <app-chores></app-chores>
+      <div class="choreFooter ">
+        <a class="waves-effect waves-light btn-small myDarkBlueBg" [routerLink]="['/chores', id]">Detailed View</a>
+    </div>
+<!-- ////CHORES SECTION END  //////////////////////////// -->
+
+
+<!-- ////FUTURE: INSTALL MESSAGING IN THIS SECTION//////////////////////////// -->
+
+<!-- ////MESSAGING SECTION END  //////////////////////////// -->

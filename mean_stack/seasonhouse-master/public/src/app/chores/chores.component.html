@@ -1,0 +1,20 @@
+<div class="chores myContainer">
+    <h1>House Chores</h1>
+    <div class="border">
+        <h3 class="myLightGreyBg myDarkBlue">Tasks</h3>
+        <div class="list" *ngFor="let chore of chores">
+            <div class="names">
+                <h4>{{chore.choreName}}</h4>
+                <p>{{chore.frequency}} •  {{chore.time}} minutes  •  {{chore.assigneeName}}</p>
+            </div>
+            <div class="innerFlex">
+                <img  *ngIf="!chore.status" src="../../assets/images/Rectangle 2.svg">
+                <img  *ngIf="chore.status" src="../../assets/images/on.png"/>
+                <img src="../../assets/images/edit.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a class="btn-floating btn-large waves-effect waves-light myDarkBlueBg" [routerLink]="['/']"><i class="material-icons">add</i></a>
+    </div>
+</div>

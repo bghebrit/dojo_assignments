@@ -1,0 +1,301 @@
+
+/* ***************BEGIN STYLING FOR CALENDAR************* */
+            @import '~@fullcalendar/core/main.css';
+            @import '~@fullcalendar/daygrid/main.css';
+
+            .fc-event{
+                background-color: #47DEFF;
+                border-radius: 18px;
+                border: 1px solid #47DEFF;
+                text-align: center;
+                line-height: 2;
+                font-size: 1.5em;
+                margin: .5em 1;
+                }
+            .fc-unthemed td, .fc-row .fc-content-skeleton td, .fc-row .fc-mirror-skeleton td, .fc-unthemed th{
+                border: 0px;
+            }
+            .fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number {
+                font-size: large;
+                margin-left: 33%;
+            }
+            .fc-sat, .fc-thu, .fc-tue, .fc-sun{
+                background: #F7F7FA;}
+            tr {
+                border-bottom: none;
+            }
+            .fc-prev-button, .fc-next-button, .fc-today-button{
+                background: #272E79;
+                border-radius: 18px;
+            }
+            .fc-today-button{
+                margin-right: .75em;
+            }
+            .fc-button-primary:disabled {
+                background-color: #9DA5C1;
+                border-color: #9DA5C1;
+            }
+            .fc-row, .fc-content-skeleton{
+                padding-bottom: 2em;
+            }
+            .fc-unthemed td.fc-today {
+                background: #E2E5EF;
+            }
+            .fc-toolbar > * > :not(:first-child) {
+                margin-left: 0em;
+            }
+            .fc-left h2{
+                font-size: xx-large;
+                text-align: center;
+            }
+            .fc-day-header{
+                color: #272E79;
+                font-size: x-large;
+                margin-bottom: 0;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+            }
+            .fc-view, .fc-view > table {
+                margin-bottom: 1%;}
+            .fc-widget-header{
+                padding-bottom: 0;
+            }
+            html{
+                padding: 5%;
+            }
+            .fc-view-container{
+                border: 2px solid #E2E5EF;
+                border-radius: 30px;
+                padding: 2%;
+                height: auto;
+            }
+            /* .fc-view-container *, .fc-view-container *:before, .fc-view-container *:after {
+                box-sizing: border-box;
+            } */
+            .fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number {
+                float: none;
+            }
+            .fc-scroller {height:100% !important;}
+/* ***************END STYLING FOR CALENDAR************* */
+/*
+----------------------- Reset styling, scroll to line 50 for the globally applied styles ----------------
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    }
+
+/* HTML5 display-role reset for older browsers */
+
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+/*
+----------------------- Globally applied styles ---------------------
+*/
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.myContainer {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    padding: 3%;
+    /* outline: 1px solid red; */
+}
+
+/* Font sizes for standard text elements*/
+
+h1{
+    font-size: 48px;    
+    line-height: 42px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+h3{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h4{
+    font-size: 21px;
+    line-height: 30px;
+}
+h5{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+p{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.smallText {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+/* Color classes */
+
+.myWhite {
+    color: #FFFFFF;
+}
+.myWhite-bg {
+    background-color: #FFFFFF;
+}
+
+
+.myBlack {
+    color: #1B1B1B;
+}
+.myBlack-bg {
+    background-color: #1B1B1B;
+}
+
+.myDarkGrey {
+    color: #9DA5C1;
+}
+.myDarkGreyBg {
+    background-color: #9DA5C1;
+}
+
+.myLightGrey {
+    color: #E2E5EF;
+}
+.myLightGreyBg {
+    background-color: #E2E5EF;
+}
+
+.myLightBlue {
+    color: #47DEFF;
+
+}
+.myLightBlueBg {
+    background-color: #47DEFF;
+}
+
+.myDarkBlue {
+    color: #272E79;
+}
+.myDarkBlueBg {
+    background-color: #272E79;
+}
+
+.myDarkBlueBgGradient {
+    background:linear-gradient(180deg, rgba(52, 59, 131, 0.95) 0%, rgba(52, 59, 131, 0.1615) 100%);
+}
+
+.myLightGreen {
+    color: #61EDCB;
+}
+.myLightGreenBg {
+    background-color: #61EDCB;
+}
+
+.myBrightGreen {
+    color: #00FF57;
+}
+.myBrightGreenBg {
+    background-color: #00FF57;
+}
+
+
+.myPurple {
+    color: #9B51E0;
+}
+.myPurpleBg {
+    background-color: #9B51E0;
+}
+
+.myagenta {
+    color: #DB00FF;
+}
+.myMagentaBg {
+    background-color:#DB00FF;
+}
+
+
+.myOrange {
+    color: #FF9A62;
+}
+.myOrangeBg {
+    background-color: #FF9A62;
+}
+
+.myYellow {
+    color: #FFC700;
+}
+.myYellowBg {
+    background-color: #FFC700;
+}
+
+
+
+.myTrafficGreen {
+    color: #61ED6F;
+}
+.myTrafficGreenBg {
+    background-color: #61ED6F;
+}
+
+.myTrafficYellow {
+    color: #FEE353;
+}
+.myTrafficYellowBg {
+    background-color: #FEE353;
+}
+
+.myTrafficRed {
+    color: #FE5353;
+}
+.myTrafficRedBg {
+    background-color: #FE5353;
+}
+
